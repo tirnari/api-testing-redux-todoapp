@@ -1,6 +1,15 @@
 # redux-todoapp
 
-> is an example React/Redux app
+> is an fork of an example React/Redux app
+> I just have add sample api test using 'chakram' + 'mocha'
+
+## Test
+
+0. `npm install`
+1. `npm run api:test`: run TEST backend API server, see [json-server].
+2. `npm start`: launch development server, then connect to http://localhost:8080/.
+2. `npm run test:api`: run tests
+
 
 ## Usage
 
