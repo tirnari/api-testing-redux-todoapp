@@ -5,10 +5,13 @@
   "description": "is an example React/Redux app",
   "main": "index.js",
   "scripts": {
+    "start": "node server.js",
     "api": "json-server --watch --delay 400 db.json",
+    "api:test": "json-server --watch --delay 400 dbTest.json --middlewares reset-dbjson-helper.js",
     "build": "BABEL_ENV=production webpack -p --progress",
     "lint": "eslint .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:api": "mocha test/api"
   },
   "repository": {
     "type": "git",
@@ -56,6 +59,14 @@
     "webpack": "^3.3.0",
     "webpack-dev-middleware": "^1.11.0",
     "webpack-dev-server": "^2.5.1",
-    "webpack-hot-middleware": "^2.18.2"
+    "webpack-hot-middleware": "^2.18.2",
+    "chai": "^4.1.2",
+    "chakram": "^1.5.0",
+    "mocha": "^5.2.0"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "chakram": "^1.5.0",
+    "mocha": "^5.2.0"
   }
 }
